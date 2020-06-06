@@ -2,6 +2,7 @@ import React from "react";
 import './home.css'
 import logo from '../../assets/logo.svg';
 import {FiLogIn} from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -17,12 +18,12 @@ const Home = () => {
                         Receba um Amigo
                     </h1>
 
-                    <a href="/cadastro">
+                    <Link to="/create-point">
                        <span>
                            <FiLogIn />
                        </span>
                        <strong>Cadastre um Pet</strong>
-                    </a>
+                    </Link>
                 </main>
             </div>
         </div>
